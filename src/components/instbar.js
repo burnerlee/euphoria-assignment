@@ -6,7 +6,7 @@ import { appStyles } from "../styles/styles";
 export class InstBar extends React.Component {
   render() {
     return (
-      <View>
+      <View style={appStyles.instContainer}>
         <View style={appStyles.bar}>
           <Image
             source={require("../assets/images/bar.png")}

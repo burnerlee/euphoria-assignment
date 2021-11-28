@@ -1,4 +1,4 @@
-import { Image, View } from "react-native";
+import { Image, Linking, Text, TouchableOpacity, View } from "react-native";
 
 import React from "react";
 import { appStyles } from "../styles/styles";
@@ -6,9 +6,9 @@ import { appStyles } from "../styles/styles";
 export class Info extends React.Component {
   render() {
     return (
-      <View>
+      <View style={appStyles.infoContainer}>
         <Image
-          source={require("./src/assets/images/illustration.png")}
+          source={require("../assets/images/illustration.png")}
           style={appStyles.illustration}
         ></Image>
         <View style={appStyles.primaryHeadingContainer}>
@@ -16,8 +16,7 @@ export class Info extends React.Component {
         </View>
         <View style={{ alignContent: "center" }}>
           <Text style={appStyles.descText}>
-            For your andy NFT to move from our{"\n"} servers to your wallet, we
-            need a{"\n"}
+            For your andy NFT to move from our servers to your wallet, we need a
             blockchain address you own.
           </Text>
         </View>

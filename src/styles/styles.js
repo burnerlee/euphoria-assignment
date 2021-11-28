@@ -5,18 +5,26 @@ export const appStyles = StyleSheet.create({
     paddingLeft: "8%",
     paddingRight: "8%",
     backgroundColor: "#FCFCFF",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight+20 : 20,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 20,
   },
   mainContentContainer: {
     flexDirection: "column",
     alignItems: "center",
+  },
+  infoContainer: {
+    flexDirection: "column",
+    alignItems: "center",
+    width: "100%",
+  },
+  instContainer: {
+    width: "100%",
   },
   headerContainer: {
     width: "100%",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom:20
+    marginBottom: 20,
   },
   bar: {
     width: "100%",
@@ -109,28 +117,28 @@ export const appStyles = StyleSheet.create({
     textDecorationLine: "underline",
     fontSize: 16,
     marginTop: 25,
-  }
+  },
 });
 
 export const navStyles = StyleSheet.create({
-    navbarDrawerContainer: {
-      backgroundColor: "#C4A0F9",
-      width: "100%",
-      height: "100%",
-      paddingLeft: "10%",
-      paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 20,
-    },
-    primaryHeading: { color: "white", fontSize: 32 },
-    navBtn: {
-      width: "90%",
-      height: 40,
-      backgroundColor: "white",
-      marginTop: 20,
-      borderRadius: 5,
-      justifyContent: "center",
-      alignItems: "center",
-    },
-    navBtnText: {
-      fontSize: 16,
-    },
-  });
+  navbarDrawerContainer: {
+    backgroundColor: "#C4A0F9",
+    width: "100%",
+    height: "100%",
+    paddingLeft: "10%",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight + 20 : 20,
+  },
+  primaryHeading: { color: "white", fontSize: 32 },
+  navBtn: {
+    width: "90%",
+    height: 40,
+    backgroundColor: "white",
+    marginTop: 20,
+    borderRadius: 5,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  navBtnText: {
+    fontSize: 16,
+  },
+});
