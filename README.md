@@ -1,4 +1,4 @@
-# My Universal React Project
+# Euphoria Assignment Project
 
 <p>
   <!-- iOS -->
